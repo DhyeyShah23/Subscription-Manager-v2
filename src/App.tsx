@@ -241,10 +241,13 @@ function App() {
           <div className="flex items-center space-x-6">
             <button className="hover:text-purple-400 transition">About</button>
             <button className="hover:text-purple-400 transition">Contact</button>
-            <button className="flex items-center space-x-1 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg transition">
-              <LogOut size={18} />
-              <span>Log Out</span>
-            </button>
+            <button 
+  onClick={() => window.location.href = 'https://subscription-manager-v0.vercel.app/login'}
+  className="flex items-center space-x-1 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg transition"
+>
+  <LogOut size={18} />
+  <span>Log Out</span>
+</button>
           </div>
         </div>
       </nav>
